@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Parkinsans:wght@300..800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Parkinsans:wght@300..800&family=Raleway:ital,wght@0,551;1,551&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Parkinsans:wght@300..800&family=Raleway:ital,wght@0,551;1,551&display=swap"
+        rel="stylesheet">
+    <title>Periodic Table</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Parkinsans:wght@300..800&family=Raleway:ital,wght@0,551;1,551&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Periodic Table</h1>
+    <button id="theme-toggle">MODE</button>
+    <div class="periodic">
+        <div class="properties">
+            <div id="info_box_2" class="info_box_2">
+                <table class="table_3">
+                    <tr>
+                        <td>
+                            <p><strong>Name:</strong> <span id="element-name-2"></span></p>
+                            <p><strong>Symbol:</strong> <span id="element-symbol-2"></span></p>
+                            <p><strong>Block:</strong> <span id="elementblock-2"></span></p>
+                            <p><strong>Group Name:</strong> <span id="elementgroup_name-2"></span></p>
+                            <p><strong>Atomic Number:</strong> <span id="atomic-number-2"></span></p>
+                            <p><strong>Information:</strong> <span id="element-info-2"></span></p>
+                        </td>
+                        <td>
+                            <p><strong>Density:</strong> <span id="elementdensity-2"></span></p>
+                            <p><strong>Oxidation State:</strong> <span id="elementoxidation_state-2"></span></p>
+                            <p><strong>Boiling Point:</strong> <span id="elementboiling_point-2"></span></p>
+                            <p><strong>Radius:</strong> <span id="elementradius-2"></span></p>
+                            <p><strong>Electronegativity:</strong> <span id="elementelectronegativity-2"></span></p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </div>
+    </br>
+    </br>
+
+    <table class="table_1">
+        <tr>
+            <td class="group-number"></td>
+            <td colspan="1" class="group-number">1</td>
+            <td colspan="1" class="group-number">2</td>
+            <td colspan="10" class="group-number"></td>
+            <td colspan="1" class="group-number">13</td>
+            <td colspan="1" class="group-number">14</td>
+            <td colspan="1" class="group-number">15</td>
+            <td colspan="1" class="group-number">16</td>
+            <td colspan="1" class="group-number">17</td>
+            <td colspan="1" class="group-number">18</td>
+        </tr>
+
+        <tr>
+            <td class="period-number">1</td>
+            <td class="box_class hydrogen" data-name="Hydrogen" data-atomic="1" data-symbol="H"
+                data-info="The lightest element." title="Hydrogen" data-density="0.00008988" data-boiling_point="14.01"
+                data-oxidation_state="+1, -1" data-electronegativity="2.20" data-radius="31"
+                data-group_name="Alkali Metals" data-block="s">1 <br> H</td>
+            <td colspan="16" class="empty-cell"></td>
+            <td class="box_class_2" data-name="Helium" data-atomic="2" data-symbol="He" data-info="A noble gas."
+                data-density="0.0001786" data-boiling_point="No melting point (solidifies under high pressure)"
+                data-oxidation_state="0" data-electronegativity="Not Applicable" data-radius="28"
+                data-group_name="Noble Gases" data-block="s">2 <br> He</td>
+
+        </tr>
+
+        <tr>
+            <td class="period-number">2</td>
+            <td class="box_class_3 lithium" data-name="Lithium" data-atomic="3" data-symbol="Li"
+                data-info="A soft, silvery-white alkali metal." data-density="0.534" data-boiling_point="453.69"
+                data-oxidation_state="+1" data-electronegativity="0.98" data-radius="128"
+                data-group_name="Alkali Metals" data-block="s">3 <br> Li</td>
+            <td class="box_class_4" data-name="Beryllium" data-atomic="4" data-symbol="Be"
+                data-info="A hard, grayish metal." data-density="1.848" data-boiling_point="1560"
+                data-oxidation_state="+2" data-electronegativity="1.57" data-radius="96"
+                data-group_name="Alkaline Earth Metals" data-block="s">4 <br> Be</td>
+            <td colspan="10" class="empty-cell"></td>
+            <td class="box_class_9" data-name="Boron" data-atomic="5" data-symbol="B"
+                data-info="A metalloid, essential in plant growth." data-density="2.34" data-boiling_point="2349"
+                data-oxidation_state="+3" data-electronegativity="2.04" data-radius="84" data-group_name="Metalloids"
+                data-block="p">5 <br> B</td>
+            <td class="box_class_10" data-name="Carbon" data-atomic="6" data-symbol="C"
+                data-info="The building block of life." data-density="2.267 (Graphite), 3.513 (Diamond)"
+                data-boiling_point="Sublimes at ~3915" data-oxidation_state="+4, +2, -4" data-electronegativity="2.55"
+                data-radius="76" data-group_name="Nonmetals" data-block="p">6 <br> C</td>
+            <td class="box_class_10" data-name="Nitrogen" data-atomic="7" data-symbol="N"
+                data-info="A colorless, odorless gas." data-density="0.0012506" data-boiling_point="63.15"
+                data-oxidation_state="-3, +1, +2, +3, +4, +5" data-electronegativity="3.04" data-radius="71"
+                data-group_name="Nonmetals" data-block="p">7 <br> N</td>
+            <td class="box_class_10" data-name="Oxygen" data-atomic="8" data-symbol="O"
+                data-info="Supports combustion and respiration." data-density="0.001429" data-boiling_point="54.36"
+                data-oxidation_state="-2, -1 (in peroxides)" data-electronegativity="3.44" data-radius="66"
+                data-group_name="Nonmetals" data-block="p">8 <br> O</td>
+            <td class="box_class_11" data-name="Fluorine" data-atomic="9" data-symbol="F"
+                data-info="The most reactive element." data-density="0.001696" data-boiling_point="53.48"
+                data-oxidation_state="-1" data-electronegativity="3.98" data-radius="57" data-group_name="Halogens"
+                data-block="p">9 <br> F</td>
+            <td class="box_class_2" data-name="Neon" data-atomic="10" data-symbol="Ne"
+                data-info="A noble gas that glows in neon signs." data-density="0.0008999" data-boiling_point="24.56"
+                data-oxidation_state="0" data-electronegativity="Not Applicable" data-radius="58"
+                data-group_name="Noble Gases" data-block="p">10 <br> Ne</td>
+
+        </tr>
+        <tr>
+            <td class="period-number">3</td>
+            <td class="box_class_3" data-name="Sodium" data-atomic="11" data-symbol="Na"
+                data-info="A soft, silvery alkali metal, reacts explosively with water." data-density="0.971"
+                data-boiling_point="370.87" data-oxidation_state="+1" data-electronegativity="0.93" data-radius="166"
+                data-group_name="Alkali Metals" data-block="s">11 <br> Na</td>
+            <td class="box_class_4" data-name="Magnesium" data-atomic="12" data-symbol="Mg"
+                data-info="A lightweight metal, used in construction and electronics" data-density="1.738"
+                data-boiling_point="923" data-oxidation_state="+2" data-electronegativity="1.31" data-radius="141"
+                data-group_name="Alkaline Earth Metals" data-block="s">12 <br> Mg</td>
+            <td colspan="10" class="empty-cell"></td>
+            <td class="box_class_8" data-name="Aluminum" data-atomic="13" data-symbol="Al"
+                data-info="A lightweight metal, used in cans and aerospace industries" data-density="2.70"
+                data-boiling_point="933.47" data-oxidation_state="+3" data-electronegativity="1.61" data-radius="121"
+                data-group_name="Post-Transition Metals" data-block="p">13 <br> Al</td>
+            <td class="box_class_9" data-name="Silicon" data-atomic="14" data-symbol="Si"
+                data-info="A metalloid, used in electronics and solar cells." data-density="2.33"
+                data-boiling_point="1687" data-oxidation_state="+4, -4" data-electronegativity="1.90" data-radius="111"
+                data-group_name="Metalloids" data-block="p">14 <br> Si</td>
+            <td class="box_class_10" data-name="Phosphorus" data-atomic="15" data-symbol="P"
+                data-info="An essential element for DNA, found in fertilizers" data-density="1.82 (White)"
+                data-boiling_point="317.3 (White)" data-oxidation_state="+5, +3, -3" data-electronegativity="2.19"
+                data-radius="107" data-group_name="Nonmetals" data-block="p">15 <br> P</td>
+            <td class="box_class_10" data-name="Sulphur" data-atomic="16" data-symbol="S"
+                data-info="A yellow solid, known for its distinct smell, found in volcanoes." data-density="2.07"
+                data-boiling_point="388.36" data-oxidation_state="-2, +2, +4, +6" data-electronegativity="2.58"
+                data-radius="105" data-group_name="Nonmetals" data-block="p">16 <br> S</td>
+            <td class="box_class_11" data-name="Chlorine" data-atomic="17" data-symbol="Cl"
+                data-info="A greenish-yellow gas, used in disinfectants and water treatment." data-density="0.003214"
+                data-boiling_point="171.6" data-oxidation_state="-1, +1, +3, +5, +7" data-electronegativity="3.16"
+                data-radius="102" data-group_name="Halogens" data-block="p">17 <br> Cl</td>
+            <td class="box_class_2" data-name="Argon" data-atomic="18" data-symbol="Ar"
+                data-info="A noble gas, used in lighting and as a shielding gas in welding" data-density="0.001784"
+                data-boiling_point="83.81" data-oxidation_state="0" data-electronegativity="Not Applicable"
+                data-radius="106" data-group_name="Noble Gases" data-block="p">18 <br> Ar</td>
+
+        </tr>
+
+
+        <tr>
+            <td class="period-number">4</td>
+            <td class="box_class_3" data-name="Potassium" data-atomic="19" data-symbol="K"
+                data-info="An essential nutrient, used in fertilizers." data-density="0.862" data-boiling_point="336.53"
+                data-oxidation_state="+1" data-electronegativity="0.82" data-radius="203"
+                data-group_name="Alkali Metals" data-block="s">19 <br> K</td>
+            <td class="box_class_4" data-name="Calcium" data-atomic="20" data-symbol="Ca"
+                data-info="A metal, important for bones and teeth, used in construction." data-density="1.54"
+                data-boiling_point="1115" data-oxidation_state="+2" data-electronegativity="1.00" data-radius="176"
+                data-group_name="Alkaline Earth Metals" data-block="s">20 <br> Ca</td>
+            <td class="box_class_5" data-name="Scandium" data-atomic="21" data-symbol="Sc"
+                data-info="A rare earth metal, used in aerospace and lighting" data-density="2.985"
+                data-boiling_point="1814" data-oxidation_state="+3" data-electronegativity="1.36" data-radius="170"
+                data-group_name="Transition Metals" data-block="d-block-block">21 <br> Sc</td>
+            <td class="box_class_5" data-name="Titanium" data-atomic="22" data-symbol="Ti"
+                data-info="A strong, lightweight metal, used in aircraft and medical implants" data-density="4.506"
+                data-boiling_point="1941" data-oxidation_state="+4, +3" data-electronegativity="1.54" data-radius="160"
+                data-group_name="Transition Metals" data-block="d-block">22 <br> Ti</td>
+            <td class="box_class_5" data-name="Vanadium" data-atomic="23" data-symbol="V"
+                data-info="A hard metal, used in steel production" data-density="" data-boiling_point="6.11"
+                data-oxidation_state="+5, +4, +3, +2" data-electronegativity="1.63" data-radius="153"
+                data-group_name="Transition Metals" data-block="d-block">23 <br> V</td>
+            <td class="box_class_5" data-name="Chromium" data-atomic="24" data-symbol="Cr"
+                data-info="A shiny, hard metal, used in stainless steel and chrome plating" data-density="7.19"
+                data-boiling_point="2180" data-oxidation_state="+3, +6, +2" data-electronegativity="1.66"
+                data-radius="139" data-group_name="Transition Metals" data-block="d-block-block">24 <br> Cr</td>
+            <td class="box_class_5" data-name="Manganese" data-atomic="25" data-symbol="Mn"
+                data-info="A metal used in steelmaking and as a catalyst" data-density="7.21" data-boiling_point="1519"
+                data-oxidation_state="+2, +4, +7, +3, +6" data-electronegativity="1.55" data-radius="139"
+                data-group_name="Transition Metals" data-block="d-block">25 <br> Mn</td>
+            <td class="box_class_5" data-name="Iron" data-atomic="26" data-symbol="Fe"
+                data-info="A common metal, vital for blood and industry" data-density="7.874" data-boiling_point="1811"
+                data-oxidation_state="+3, +2" data-electronegativity="1.83" data-radius="132"
+                data-group_name="Transition Metals" data-block="d-block">26 <br> Fe</td>
+            <td class="box_class_5" data-name="Cobalt" data-atomic="27" data-symbol="Co"
+                data-info="A metal, used in magnets and high-strength alloys." data-density="8.90"
+                data-boiling_point="1768" data-oxidation_state="+2, +3" data-electronegativity="1.88" data-radius="126"
+                data-group_name="Transition Metals" data-block="d-block">27 <br> Co</td>
+            <td class="box_class_5" data-name="Nickel" data-atomic="28" data-symbol="Ni"
+                data-info="Shiny metal, resistant to corrosion, used in coins." data-density="8.908"
+                data-boiling_point="1728" data-oxidation_state="+2, +3" data-electronegativity="1.91" data-radius="124"
+                data-group_name="Transition Metals" data-block="d-block">28 <br> Ni</td>
+            <td class="box_class_5" data-name="Copper" data-atomic="29" data-symbol="Cu"
+                data-info="A red-orange metal, used in wiring and plumbing" data-density="8.96"
+                data-boiling_point="1357.77" data-oxidation_state="+2, +1" data-electronegativity="1.90"
+                data-radius="128" data-group_name="Transition Metals" data-block="d-block">29 <br> Cu</td>
+            <td class="box_class_5" data-name="Zinc" data-atomic="30" data-symbol="Zn"
+                data-info="A metal, used in galvanizing steel and batteries." data-density="7.14"
+                data-boiling_point="692.68" data-oxidation_state="+2" data-electronegativity="1.65" data-radius="133"
+                data-group_name="Transition Metals" data-block="d-block">30 <br> Zn</td>
+            <td class="box_class_8" data-name="Gallium" data-atomic="31" data-symbol="Ga"
+                data-info="A soft metal, used in LEDs and solar cells." data-density="5.91" data-boiling_point="302.91"
+                data-oxidation_state="+3, +1" data-electronegativity="1.81" data-radius="122"
+                data-group_name="Post-Transition Metals" data-block="p">31 <br> Ga</td>
+            <td class="box_class_9" data-name="Germanium" data-atomic="32" data-symbol="Ge"
+                data-info="A metalloid, used in semiconductors and fiber optics." data-density="5.323"
+                data-boiling_point="1211.4" data-oxidation_state="+4, +2" data-electronegativity="2.01"
+                data-radius="120" data-group_name="Metalloids" data-block="p">32 <br> Ge</td>
+            <td class="box_class_9" data-name="Arsenic" data-atomic="33" data-symbol="As"
+                data-info="A toxic metalloid, used in pesticides and semiconductors" data-density="5.776"
+                data-boiling_point="Sublimes at 887" data-oxidation_state="+5, +3, -3" data-electronegativity="2.18"
+                data-radius="119" data-group_name="Metalloids" data-block="p">33 <br> As</td>
+            <td class="box_class_10" data-name="Selenium" data-atomic="34" data-symbol="Se"
+                data-info="A nonmetal, used in glassmaking and photocells." data-density="4.79" data-boiling_point="494"
+                data-oxidation_state="2, +4, +6" data-electronegativity="2.55" data-radius="116"
+                data-group_name="Nonmetals" data-block="p">34 <br> Se</td>
+            <td class="box_class_11" data-name="Bromine" data-atomic="35" data-symbol="Br"
+                data-info="A reddish-brown liquid, used in flame retardants." data-density="3.12"
+                data-boiling_point="265.8" data-oxidation_state="-1, +1, +3, +5, +7" data-electronegativity="2.96"
+                data-radius="114" data-group_name="Halogens" data-block="p">35 <br> Br</td>
+            <td class="box_class_2" data-name="Krypton" data-atomic="36" data-symbol="Kr"
+                data-info="A noble gas, used in high-performance lighting." data-density="0.003733"
+                data-boiling_point="115.79" data-oxidation_state="0" data-electronegativity="3.00" data-radius="110"
+                data-group_name="Noble Gases" data-block="p">36 <br> Kr</td>
+
+        </tr>
+
+
+        <tr>
+            <td class="period-number">5</td>
+            <td class="box_class_3" data-name="Rubidium" data-atomic="37" data-symbol="Rb"
+                data-info="A soft, silvery alkali metal, highly reactive" data-density="1.532"
+                data-boiling_point="312.46" data-oxidation_state="+1" data-electronegativity="0.82" data-radius="248"
+                data-group_name="Alkali Metals" data-block="s-block">37 <br> Rb</td>
+            <td class="box_class_4" data-name="Strontium" data-atomic="38" data-symbol="Sr"
+                data-info="A rare earth metal, used in lasers and ceramics" data-density="2.64"
+                data-boiling_point="1050" data-oxidation_state="+2" data-electronegativity="0.95" data-radius="215"
+                data-group_name="Alkaline Earth Metals" data-block="s-block">38 <br> Sr</td>
+            <td class="box_class_5" data-name="Yttrium" data-atomic="39" data-symbol="Y"
+                data-info="A rare earth metal, used in lasers and ceramics" data-density="4.47"
+                data-boiling_point="1799" data-oxidation_state="+3" data-electronegativity="1.22" data-radius="180"
+                data-group_name="Transition Metals" data-block="d-block-block">39 <br> Y</td>
+            <td class="box_class_5" data-name="Zirconium" data-atomic="40" data-symbol="Zr"
+                data-info="A strong metal, used in nuclear reactors and jewelry." data-density="6.52"
+                data-boiling_point="2128" data-oxidation_state="+4" data-electronegativity="1.33" data-radius="155"
+                data-group_name="Transition Metals" data-block="d-block-block">40 <br> Zr</td>
+            <td class="box_class_5" data-name="Niobium" data-atomic="41" data-symbol="Nb"
+                data-info="A metal, used in jet engines and medical equipment" data-density="8.57"
+                data-boiling_point="2750" data-oxidation_state="+5, +3" data-electronegativity="1.6" data-radius="145"
+                data-group_name="Transition Metals" data-block="d-block-block">41 <br> Nb</td>
+            <td class="box_class_5" data-name="Molybdenum" data-atomic="42" data-symbol="Mo"
+                data-info="A metal with high melting point, used in steel alloys" data-density="10.28"
+                data-boiling_point="2896" data-oxidation_state="+6, +4" data-electronegativity="2.16" data-radius="145"
+                data-group_name="Transition Metals" data-block="d-block-block">42 <br> Mo</td>
+            <td class="box_class_5" data-name="Technetium" data-atomic="43" data-symbol="Tc"
+                data-info="A radioactive metal, used in medical imaging" data-density="11.5" data-boiling_point="2430"
+                data-oxidation_state="+7, +4" data-electronegativity="1.9" data-radius="135"
+                data-group_name="Transition Metals" data-block="d-block-block">43 <br> Tc</td>
+            <td class="box_class_5" data-name="Ruthenium" data-atomic="44" data-symbol="Ru"
+                data-info="A rare metal, used in catalytic converters" data-density="12.37" data-boiling_point="2607"
+                data-oxidation_state="+3, +4, +8" data-electronegativity="2.2" data-radius="130"
+                data-group_name="Transition Metals" data-block="d-block-block">44 <br> Ru</td>
+            <td class="box_class_5" data-name="Rhodium" data-atomic="45" data-symbol="Rh"
+                data-info="A precious metal, used in jewelry and electronics." data-density="12.41"
+                data-boiling_point="2237" data-oxidation_state="+3, +1, +2" data-electronegativity="2.28"
+                data-radius="135" data-group_name="Transition Metals" data-block="d-block-block">45 <br> Rh</td>
+            <td class="box_class_5" data-name="Palladium" data-atomic="46" data-symbol="Pd"
+                data-info="A precious metal, used in catalytic converters and jewelry" data-density="12.02"
+                data-boiling_point="1828.05" data-oxidation_state="+2, +4" data-electronegativity="2.20"
+                data-radius="140" data-group_name="Transition Metals" data-block="d-block-block">46 <br> Pd</td>
+            <td class="box_class_5" data-name="Silver" data-atomic="47" data-symbol="Ag"
+                data-info="A precious metal, used in jewelry, coins, and electronics." data-density="10.49"
+                data-boiling_point="1234.93" data-oxidation_state="+1" data-electronegativity="1.93" data-radius="160"
+                data-group_name="Transition Metals" data-block="d-block-block">47 <br> Ag</td>
+            <td class="box_class_5" data-name="Cadmium" data-atomic="48" data-symbol="Cd"
+                data-info="A soft metal, used in batteries and pigments." data-density="8.65"
+                data-boiling_point="594.22" data-oxidation_state="+2" data-electronegativity="1.69" data-radius=""
+                data-group_name="Transition Metals" data-block="d-block-block">48 <br> Cd</td>
+            <td class="box_class_8" data-name="Indium" data-atomic="49" data-symbol="In"
+                data-info="A soft metal, used in touchscreens and semiconductors." data-density="7.31"
+                data-boiling_point="429.75" data-oxidation_state="+3, +1" data-electronegativity="1.78"
+                data-radius="155" data-group_name="Post-Transition Metals" data-block="p-block">49 <br> In</td>
+            <td class="box_class_8" data-name="Tin" data-atomic="50" data-symbol="Sn"
+                data-info="A metal, used in solder and corrosion-resistant coatings" data-density="7.31"
+                data-boiling_point="505.08" data-oxidation_state="+4, +2" data-electronegativity="1.96"
+                data-radius="145" data-group_name="Post-Transition Metals" data-block="p-block">50 <br> Sn</td>
+            <td class="box_class_9" data-name="Antimony" data-atomic="51" data-symbol="Sb"
+                data-info="A metalloid, used in fire retardants and alloys" data-density="6.697"
+                data-boiling_point="903.78" data-oxidation_state="+5, +3, -3" data-electronegativity="2.05"
+                data-radius="133" data-group_name="Metalloids" data-block="p-block">51 <br> Sb</td>
+            <td class="box_class_9" data-name="Tellurium" data-atomic="52" data-symbol="Te"
+                data-info="A metalloid, used in thermoelectric devices" data-density="6.24" data-boiling_point="722.66"
+                data-oxidation_state="-2, +4, +6" data-electronegativity="2.1" data-radius="123"
+                data-group_name="Metalloids" data-block="p-block">52 <br> Te</td>
+            <td class="box_class_11" data-name="Iodine" data-atomic="53" data-symbol="I"
+                data-info="A halogen, used in antiseptics and photography" data-density="4.93"
+                data-boiling_point="386.85" data-oxidation_state="-1, +1, +3, +5, +7" data-electronegativity="2.66"
+                data-radius="115" data-group_name="Halogens" data-block="p-block">53 <br> I</td>
+            <td class="box_class_2" data-name="Xenon" data-atomic="54" data-symbol="Xe"
+                data-info="A noble gas, used in lighting and anesthetics." data-density="0.005887"
+                data-boiling_point="161.36" data-oxidation_state="0, +2, +4, +6, +8" data-electronegativity="2.60"
+                data-radius="108" data-group_name="Noble Gases" data-block="p-block">54 <br> Xe</td>
+
+        </tr>
+
+
+        <tr>
+            <td class="period-number">6</td>
+            <td class="box_class_3" data-name="Caesium" data-atomic="55" data-symbol="Cs"
+                data-info="A soft alkali metal, used in atomic clocks" data-density="1.93" data-boiling_point="301.59"
+                data-oxidation_state="+1" data-electronegativity="0.79" data-radius="265"
+                data-group_name="Alkali Metals" data-block="s-block">55 <br> Cs</td>
+            <td class="box_class_4" data-name="Barium" data-atomic="56" data-symbol="Ba"
+                data-info="A soft metal, used in fireworks and oil drilling." data-density="3.62" data-boiling_point=""
+                data-oxidation_state="+2" data-electronegativity="0.89" data-radius="222"
+                data-group_name="Alkaline Earth Metals" data-block="s-block">56 <br> Ba</td>
+            <td class="box_class_6" data-name="Lanthanoids" data-atomic="57-71">57-71</td>
+            <td class="box_class_5" data-name="Hafnium" data-atomic="72" data-symbol="Hf"
+                data-info="A transition metal, used in alloys and electronics" data-density="13.31"
+                data-boiling_point="2506" data-oxidation_state="+4" data-electronegativity="1.3" data-radius="159"
+                data-group_name="Transition Metals" data-block="d-block-block">72 <br> Hf</td>
+            <td class="box_class_5" data-name="Tantalum" data-atomic="73" data-symbol="Ta"
+                data-info="A transition metal, used in electronics and alloys" data-density="16.65"
+                data-boiling_point="3290" data-oxidation_state="+5" data-electronegativity="1.5" data-radius="147"
+                data-group_name="Transition Metals" data-block="d-block-block">73 <br> Ta</td>
+            <td class="box_class_5" data-name="Tungsten" data-atomic="74" data-symbol="W"
+                data-info="A metal with a high melting point, used in lightbulb filaments" data-density="19.25"
+                data-boiling_point="3695" data-oxidation_state="+6, +4, +5" data-electronegativity="2.36"
+                data-radius="135" data-group_name="Transition Metals" data-block="d-block-block">74 <br> W</td>
+            <td class="box_class_5" data-name="Rhenium" data-atomic="75" data-symbol="Re"
+                data-info="A rare transition metal, used in electronics." data-density="21.02" data-boiling_point="3459"
+                data-oxidation_state="+7, +4, +6" data-electronegativity="1.9" data-radius="137"
+                data-group_name="Transition Metals" data-block="d-block-block">75 <br> Re</td>
+            <td class="box_class_5" data-name="Osmium" data-atomic="76" data-symbol="Os"
+                data-info="A hard metal, used in fountain pen tips and electrical contacts." data-density="22.59"
+                data-boiling_point="3306" data-oxidation_state="+4, +8" data-electronegativity="2.2" data-radius="135"
+                data-group_name="Transition Metals" data-block="d-block-block">76 <br> Os</td>
+            <td class="box_class_5" data-name="Iridium" data-atomic="77" data-symbol="Ir"
+                data-info="A hard metal, used in spark plugs and jewelry" data-density="22.56" data-boiling_point="2716"
+                data-oxidation_state="+3, +4" data-electronegativity="2.20" data-radius="137"
+                data-group_name="Transition Metals" data-block="d-block-block">77 <br> Ir</td>
+            <td class="box_class_5" data-name="Platinum" data-atomic="78" data-symbol="Pt"
+                data-info="A precious metal, used in catalytic converters and jewelry." data-density="21.45"
+                data-boiling_point="2041.4" data-oxidation_state="+2, +4" data-electronegativity="2.28"
+                data-radius="139" data-group_name="Transition Metals" data-block="d-block-block">78 <br> Pt</td>
+            <td class="box_class_5" data-name="Gold" data-atomic="79" data-symbol="Au"
+                data-info="A precious metal, used in jewelry and electronics." data-density="19.32"
+                data-boiling_point="1337.33" data-oxidation_state="+3, +1" data-electronegativity="2.54"
+                data-radius="144" data-group_name="Transition Metals" data-block="d-block-block">79 <br> Au</td>
+            <td class="box_class_5" data-name="Mercury" data-atomic="80" data-symbol="Hg"
+                data-info="A liquid metal, used in thermometers and switches" data-density="13.534"
+                data-boiling_point="234.43" data-oxidation_state="+2, +1" data-electronegativity="2.00"
+                data-radius="151" data-group_name="Transition Metals" data-block="d-block-block">80 <br> Hg</td>
+            <td class="box_class_8" data-name="Thallium" data-atomic="81" data-symbol="Tl"
+                data-info="A soft metal, used in electronics and LEDs." data-density="11.85" data-boiling_point="577"
+                data-oxidation_state="+3, +1" data-electronegativity="1.62" data-radius="170"
+                data-group_name="Post-Transition Metals" data-block="p-block">81 <br> Tl</td>
+            <td class="box_class_8" data-name="Lead" data-atomic="82" data-symbol="Pb"
+                data-info="A heavy metal, used in batteries and radiation shielding" data-density="11.34"
+                data-boiling_point="600.61" data-oxidation_state="+4, +2" data-electronegativity="2.33"
+                data-radius="175" data-group_name="Post-Transition Metals" data-block="p-block">82 <br> Pb</td>
+            <td class="box_class_8" data-name="Bismuth" data-atomic="83" data-symbol="Bi"
+                data-info="A heavy metal, used in pharmaceuticals and cosmetics." data-density="9.78"
+                data-boiling_point="544.7" data-oxidation_state="+3, +5" data-electronegativity="2.02" data-radius="170"
+                data-group_name="Post-Transition Metals" data-block="p-block">83 <br> Bi</td>
+            <td class="box_class_9" data-name="Polonium" data-atomic="84" data-symbol="Po"
+                data-info="A radioactive metal, used in research." data-density="9.32" data-boiling_point="527"
+                data-oxidation_state="+4, +2" data-electronegativity="2.0" data-radius="176"
+                data-group_name="Metalloids" data-block="p-block">84 <br> Po</td>
+            <td class="box_class_11" data-name="Astatine" data-atomic="85" data-symbol="At"
+                data-info="A radioactive halogen, used in research." data-density="6.15" data-boiling_point="~575"
+                data-oxidation_state="-1, +1, +3, +5" data-electronegativity="2.2 (Estimated)" data-radius="150"
+                data-group_name="Halogens" data-block="p-block">85 <br> At</td>
+            <td class="box_class_2" data-name="Radon" data-atomic="86" data-symbol="Rn"
+                data-info="A radioactive noble gas, used in cancer treatment" data-density="0.00973"
+                data-boiling_point="202" data-oxidation_state="0" data-electronegativity="Not Applicable"
+                data-radius="120" data-group_name="Noble Gases" data-block="p-block">86 <br> Rn</td>
+
+
+        </tr>
+
+
+        <tr>
+            <td class="period-number">7</td>
+            <td class="box_class_3" data-name="Francium" data-atomic="87" data-symbol="Fr"
+                data-info="A highly radioactive alkali metal, used in research" data-density="1.87"
+                data-boiling_point="~300" data-oxidation_state="+1" data-electronegativity="0.7 (Estimated)"
+                data-radius="260" data-group_name="Alkali Metals" data-block="s">87 <br> Fr</td>
+            <td class="box_class_4" data-name="Radium" data-atomic="88" data-symbol="Ra"
+                data-info="A radioactive metal, used in research and radiology." data-density="5.5"
+                data-boiling_point="~973" data-oxidation_state="+2" data-electronegativity="0.9 (Estimated)"
+                data-radius="215" data-group_name="Alkaline Earth Metals" data-block="s">88 <br> Ra</td>
+            <td class="box_class_7" data-name="Actinoids" data-atomic="89-103" data-symbol="" data-info=""
+                data-group_name="Actinides" data-block="f">89-103</td>
+            <td class="box_class_5" data-name="Rutherfordium" data-atomic="104" data-symbol="Rf"
+                data-info="A synthetic element, used in research." data-density="23.2"
+                data-boiling_point="Unknown or Theoretical" data-oxidation_state="Predicted values (e.g., +4, +6, etc.)"
+                data-electronegativity="~1.3 (Estimated)" data-radius="160 (Theoretical)"
+                data-group_name="Transition Metals" data-block="d-block">104 <br> Rf</td>
+            <td class="box_class_5" data-name="Dubnium" data-atomic="105" data-symbol="Db"
+                data-info="A synthetic element, used in research." data-density="29.6"
+                data-boiling_point="Unknown or Theoretical" data-oxidation_state="Predicted values (e.g., +4, +6, etc.)"
+                data-electronegativity="~1.3 (Estimated)" data-radius="149 (Theoretical)"
+                data-group_name="Transition Metals" data-block="d-block">105 <br> Db</td>
+            <td class="box_class_5" data-name="Seaborgium" data-atomic="106" data-symbol="Sg"
+                data-info="A synthetic element, used in research." data-density="35.0"
+                data-boiling_point="Unknown or Theoretical" data-oxidation_state="Predicted values (e.g., +4, +6, etc.)"
+                data-electronegativity="~1.3 (Estimated)" data-radius="132 (Theoretical)"
+                data-group_name="Transition Metals" data-block="d-block">106 <br> Sg</td>
+            <td class="box_class_5" data-name="Bohrium" data-atomic="107" data-symbol="Bh"
+                data-info="A synthetic element, used in research." data-density="37.0"
+                data-boiling_point="Unknown or Theoretical" data-oxidation_state="Predicted values (e.g., +4, +6, etc.)"
+                data-electronegativity="~1.3 (Estimated)" data-radius="128 (Theoretical)"
+                data-group_name="Transition Metals" data-block="d-block">107 <br> Bh</td>
+            <td class="box_class_5" data-name="Hassium" data-atomic="108" data-symbol="Hs"
+                data-info="A synthetic element, used in research." data-density="41.0"
+                data-boiling_point="Unknown or Theoretical" data-oxidation_state="Predicted values (e.g., +4, +6, etc.)"
+                data-electronegativity="~1.3 (Estimated)" data-radius="126 (Theoretical)"
+                data-group_name="Transition Metals" data-block="d-block">108 <br> Hs</td>
+            <td class="box_class_5" data-name="Meitnerium" data-atomic="109" data-symbol="Mt"
+                data-info="A synthetic element, used in research." data-density="44.0"
+                data-boiling_point="Unknown or Theoretical" data-oxidation_state="Predicted values (e.g., +4, +6, etc.)"
+                data-electronegativity="Unknown" data-radius="Not Available" data-group_name="Transition Metals"
+                data-block="d-block">109 <br> Mt</td>
+            <td class="box_class_5" data-name="Darmstadtium" data-atomic="110" data-symbol="Ds"
+                data-info="A synthetic element, used in research." data-density="45.0"
+                data-boiling_point="Unknown or Theoretical" data-oxidation_state="Predicted values (e.g., +4, +6, etc.)"
+                data-electronegativity="Unknown" data-radius="Not Available" data-group_name="Transition Metals"
+                data-block="d-block">110 <br> Ds</td>
+            <td class="box_class_5" data-name="Roentgenium" data-atomic="111" data-symbol="Rg"
+                data-info="A synthetic element, used in research." data-density="49.0"
+                data-boiling_point="Unknown or Theoretical" data-oxidation_state="Predicted values (e.g., +4, +6, etc.)"
+                data-electronegativity="~1.4 (Estimated)" data-radius="Not Available"
+                data-group_name="Transition Metals" data-block="d-block">111 <br> Rg</td>
+            <td class="box_class_5" data-name="Copernicium" data-atomic="112" data-symbol="Cn"
+                data-info="A synthetic element, used in research." data-density="48.0"
+                data-boiling_point="Unknown or Theoretical" data-oxidation_state="Predicted values (e.g., +4, +6, etc.)"
+                data-electronegativity="~1.5 (Estimated)" data-radius="Not Available"
+                data-group_name="Transition Metals" data-block="d-block">112 <br> Cn</td>
+            <td class="box_class_8" data-name="Nihonium" data-atomic="113" data-symbol="Nh"
+                data-info="A synthetic element, used in research." data-density="16.6"
+                data-boiling_point="Unknown or Theoretical" data-oxidation_state="Predicted values (e.g., +4, +6, etc.)"
+                data-electronegativity="~1.3 (Estimated)" data-radius="180 (Theoretical)"
+                data-group_name="Post-Transition Metals" data-block="p">113 <br> Nh</td>
+            <td class="box_class_8" data-name="Flerovium" data-atomic="114" data-symbol="Fl"
+                data-info="A synthetic element, used in research." data-density="16.6"
+                data-boiling_point="Unknown or Theoretical" data-oxidation_state="Predicted values (e.g., +4, +6, etc.)"
+                data-electronegativity="~1.3 (Estimated)" data-radius="175 (Theoretical)"
+                data-group_name="Post-Transition Metals" data-block="p">114 <br> Fl</td>
+            <td class="box_class_8" data-name="Moscovium" data-atomic="115" data-symbol="Mc"
+                data-info="A synthetic element, used in research." data-density="14.0"
+                data-boiling_point="Unknown or Theoretical" data-oxidation_state="Predicted values (e.g., +4, +6, etc.)"
+                data-electronegativity="~1.3 (Estimated)" data-radius="200 (Theoretical)"
+                data-group_name="Post-Transition Metals" data-block="p">115 <br> Mc</td>
+            <td class="box_class_8" data-name="Livermorium" data-atomic="116" data-symbol="Lv"
+                data-info="A synthetic element, used in research." data-density="13.0"
+                data-boiling_point="Unknown or Theoretical" data-oxidation_state="Predicted values (e.g., +4, +6, etc.)"
+                data-electronegativity="~1.3 (Estimated)" data-radius="175 (Theoretical)"
+                data-group_name="Post-Transition Metals" data-block="p">116 <br> Lv</td>
+            <td class="box_class_11" data-name="Tennessine" data-atomic="117" data-symbol="Ts"
+                data-info="A synthetic element, used in research." data-density="10.0"
+                data-boiling_point="Unknown or Theoretical" data-oxidation_state="Predicted values (e.g., +4, +6, etc.)"
+                data-electronegativity="~1.3 (Estimated)" data-radius="165 (Theoretical)" data-group_name="Halogens"
+                data-block="p">117 <br> Ts</td>
+            <td class="box_class_2" data-name="Oganesson" data-atomic="118" data-symbol="Og"
+                data-info="A noble gas, the heaviest known element, used in research." data-density="3.8"
+                data-boiling_point="Unknown or Theoretical" data-oxidation_state="Predicted values (e.g., +4, +6, etc.)"
+                data-electronegativity="~1.0 (Theoretical)" data-radius="Not Available" data-group_name="Noble Gases"
+                data-block="p">118 <br> Og</td>
+
+        </tr>
+    </table>
+    </br>
+    </br>
+    <table class="table_2">
+        <tr>
+            <td class="box_class_6" data-name="Lanthanum" data-atomic="57" data-symbol="La"
+                data-info="A rare earth metal, used in optical lenses and ceramics." data-density="6.15"
+                data-boiling_point="1193" data-oxidation_state="+3, +2, +4" data-electronegativity="1.10"
+                data-radius="187" data-group_name="Lanthanides" data-block="f">57 <br> La</td>
+            <td class="box_class_6" data-name="Cerium" data-atomic="58" data-symbol="Ce"
+                data-info="A rare earth metal, used in catalytic converters and alloys." data-density="6.77"
+                data-boiling_point="1068" data-oxidation_state="+3, +2, +4" data-electronegativity="1.12"
+                data-radius="182" data-group_name="Lanthanides" data-block="f">58 <br> Ce</td>
+            <td class="box_class_6" data-name="Praseodymium" data-atomic="59" data-symbol="Pr"
+                data-info="A rare earth metal, used in magnets and nuclear reactors." data-density="6.77"
+                data-boiling_point="1204" data-oxidation_state="+3, +2, +4" data-electronegativity="1.13"
+                data-radius="182" data-group_name="Lanthanides" data-block="f">59 <br> Pr</td>
+            <td class="box_class_6" data-name="Neodymium" data-atomic="60" data-symbol="Nd"
+                data-info="A rare earth metal, used in lasers and alloys." data-density="7.01" data-boiling_point="1297"
+                data-oxidation_state="+3, +2, +4" data-electronegativity="1.14" data-radius="181"
+                data-group_name="Lanthanides" data-block="f">60 <br> Nd</td>
+            <td class="box_class_6" data-name="Promethium" data-atomic="61" data-symbol="Pm"
+                data-info="A radioactive metal, used in research and specialized applications." data-density="7.26"
+                data-boiling_point="1315" data-oxidation_state="+3, +2, +4" data-electronegativity="1.13"
+                data-radius="180" data-group_name="Lanthanides" data-block="f">61 <br> Pm</td>
+            <td class="box_class_6" data-name="Samarium" data-atomic="62" data-symbol="Sm"
+                data-info="A rare earth metal, used in lasers and nuclear reactors." data-density="7.52"
+                data-boiling_point="1345" data-oxidation_state="+3, +2, +4" data-electronegativity="1.17"
+                data-radius="180" data-group_name="Lanthanides" data-block="f">62 <br> Sm</td>
+            <td class="box_class_6" data-name="Europium" data-atomic="63" data-symbol="Eu"
+                data-info="A rare earth metal, used in TV screens and lasers." data-density="5.24"
+                data-boiling_point="1099" data-oxidation_state="+3, +2, +4" data-electronegativity="1.00"
+                data-radius="199" data-group_name="Lanthanides" data-block="f">63 <br> Eu</td>
+            <td class="box_class_6" data-name="Gadolinium" data-atomic="64" data-symbol="Gd"
+                data-info="A rare earth metal, used in magnets and medical devices." data-density="7.90"
+                data-boiling_point="1585" data-oxidation_state="+3, +2, +4" data-electronegativity="1.20"
+                data-radius="179" data-group_name="Lanthanides" data-block="f">64 <br> Gd</td>
+            <td class="box_class_6" data-name="Terbium" data-atomic="65" data-symbol="Tb"
+                data-info="A rare earth metal, used in electronic displays." data-density="8.23"
+                data-boiling_point="1629" data-oxidation_state="+3, +2, +4" data-electronegativity="1.10"
+                data-radius="176" data-group_name="Lanthanides" data-block="f">65 <br> Tb</td>
+            <td class="box_class_6" data-name="Dysprosium" data-atomic="66" data-symbol="Dy"
+                data-info="A rare earth metal, used in ceramics and nuclear reactors." data-density="8.55"
+                data-boiling_point="1680" data-oxidation_state="+3, +2, +4" data-electronegativity="1.22"
+                data-radius="175" data-group_name="Lanthanides" data-block="f">66 <br> Dy</td>
+            <td class="box_class_6" data-name="Holmium" data-atomic="67" data-symbol="Ho"
+                data-info="A rare earth metal, used in lasers and magnets." data-density="8.79"
+                data-boiling_point="1734" data-oxidation_state="+3, +2, +4" data-electronegativity="1.22"
+                data-radius="174" data-group_name="Lanthanides" data-block="f">67 <br> Ho</td>
+            <td class="box_class_6" data-name="Erbium" data-atomic="68" data-symbol="Er"
+                data-info="A rare earth metal, used in fiber optics and phosphors." data-density="9.07"
+                data-boiling_point="1802" data-oxidation_state="+3, +2, +4" data-electronegativity="1.24"
+                data-radius="173" data-group_name="Lanthanides" data-block="f">68 <br> Er</td>
+            <td class="box_class_6" data-name="Thulium" data-atomic="69" data-symbol="Tm"
+                data-info="A rare earth metal, used in medical lasers and electronics." data-density="9.32"
+                data-boiling_point="1818" data-oxidation_state="+3, +2, +4" data-electronegativity="1.25"
+                data-radius="172" data-group_name="Lanthanides" data-block="f">69 <br> Tm</td>
+            <td class="box_class_6" data-name="Ytterbium" data-atomic="70" data-symbol="Yb"
+                data-info="A rare earth metal, used in phosphors and lasers." data-density="6.90"
+                data-boiling_point="1097" data-oxidation_state="+3, +2, +4" data-electronegativity="1.10"
+                data-radius="194" data-group_name="Lanthanides" data-block="f">70 <br> Yb</td>
+            <td class="box_class_6" data-name="Lutetium" data-atomic="71" data-symbol="Lu"
+                data-info="A rare earth metal, used in alloys and catalysts." data-density="9.84"
+                data-boiling_point="1925" data-oxidation_state="+3, +2, +4" data-electronegativity="1.27"
+                data-radius="172" data-group_name="Lanthanides" data-block="f">71 <br> Lu</td>
+
+
+        </tr>
+
+
+        <tr>
+            <td class="box_class_7" data-name="Actinium" data-atomic="89" data-symbol="Ac"
+                data-info="A radioactive metal, used in research" data-density="10.07" data-boiling_point="1323"
+                data-oxidation_state="+3, +4, +5, +6" data-electronegativity="1.1 (Estimated)" data-radius="195"
+                data-group_name="Actinides" data-block="f">89 <br> Ac</td>
+            <td class="box_class_7" data-name="Thorium" data-atomic="90" data-symbol="Th"
+                data-info="A radioactive metal, used in nuclear reactors." data-density="11.72"
+                data-boiling_point="2023" data-oxidation_state="+3, +4, +5, +6" data-electronegativity="1.3"
+                data-radius="180" data-group_name="Actinides" data-block="f">90 <br> Th</td>
+            <td class="box_class_7" data-name="Protactinium" data-atomic="91" data-symbol="Pa"
+                data-info="A radioactive metal, used in research" data-density="15.37" data-boiling_point="1841"
+                data-oxidation_state="+3, +4, +5, +6" data-electronegativity="1.5" data-radius="161"
+                data-group_name="Actinides" data-block="f">91 <br> Pa</td>
+            <td class="box_class_7" data-name="Uranium" data-atomic="92" data-symbol="U"
+                data-info="A radioactive metal, used as fuel in nuclear reactors." data-density="18.95"
+                data-boiling_point="1405.3" data-oxidation_state="+3, +4, +5, +6" data-electronegativity="1.38"
+                data-radius="156" data-group_name="Actinides" data-block="f">92 <br> U</td>
+            <td class="box_class_7" data-name="Neptunium" data-atomic="93" data-symbol="Np"
+                data-info="A radioactive metal, used in research." data-density="20.45" data-boiling_point="917"
+                data-oxidation_state="+3, +4, +5, +6" data-electronegativity="1.36" data-radius="155"
+                data-group_name="Actinides" data-block="f">93 <br> Np</td>
+            <td class="box_class_7" data-name="Plutonium" data-atomic="94" data-symbol="Pu"
+                data-info="A radioactive metal, used in nuclear weapons and reactors." data-density="19.86"
+                data-boiling_point="913" data-oxidation_state="+3, +4, +5, +6" data-electronegativity="1.28"
+                data-radius="159" data-group_name="Actinides" data-block="f">94 <br> Pu</td>
+            <td class="box_class_7" data-name="Americium" data-atomic="95" data-symbol="Am"
+                data-info="A synthetic element, used in research" data-density="13.67" data-boiling_point="1449"
+                data-oxidation_state="+3, +4, +5, +6" data-electronegativity="1.3" data-radius="173"
+                data-group_name="Actinides" data-block="f">95 <br> Am</td>
+            <td class="box_class_7" data-name="Curium" data-atomic="96" data-symbol="Cm"
+                data-info="A synthetic element, used in research" data-density="13.51" data-boiling_point="~1613"
+                data-oxidation_state="+3, +4, +5, +6" data-electronegativity="1.3 (Estimated)" data-radius="174"
+                data-group_name="Actinides" data-block="f">96 <br> Cm</td>
+            <td class="box_class_7" data-name="Berkelium" data-atomic="97" data-symbol="Bk"
+                data-info="A synthetic element, used in research" data-density="14.78" data-boiling_point="~1259"
+                data-oxidation_state="+3, +4, +5, +6" data-electronegativity="1.3 (Estimated)" data-radius="170"
+                data-group_name="Actinides" data-block="f">97 <br> Bk</td>
+            <td class="box_class_7" data-name="Californium" data-atomic="98" data-symbol="Cf"
+                data-info="A synthetic element, used in research" data-density="15.1" data-boiling_point="~1173"
+                data-oxidation_state="+3, +4, +5, +6" data-electronegativity="1.3 (Estimated)" data-radius="168"
+                data-group_name="Actinides" data-block="f">98 <br>Cf</td>
+            <td class="box_class_7" data-name="Einsteinium" data-atomic="99" data-symbol="Es"
+                data-info="A synthetic element, used in research" data-density="8.8" data-boiling_point="~1133"
+                data-oxidation_state="+3, +4, +5, +6" data-electronegativity="Unknown" data-radius="167"
+                data-group_name="Actinides" data-block="f">99 <br> Es</td>
+            <td class="box_class_7" data-name="Fermium" data-atomic="100" data-symbol="Fm"
+                data-info="A synthetic element, used in research" data-density="9.7" data-boiling_point=""
+                data-oxidation_state="+3, +4, +5, +6" data-electronegativity="Unknown" data-radius="165"
+                data-group_name="Actinides" data-block="f">100 <br> Fm</td>
+            <td class="box_class_7" data-name="Mendelevium" data-atomic="101" data-symbol="Md"
+                data-info="A synthetic element, used in research" data-density="10.3" data-boiling_point="Unknown"
+                data-oxidation_state="+3, +4, +5, +6" data-electronegativity="Unknown" data-radius="164"
+                data-group_name="Actinides" data-block="f">101 <br> Md</td>
+            <td class="box_class_7" data-name="Nobelium" data-atomic="102" data-symbol="No"
+                data-info="A synthetic element, used in research" data-density="9.9" data-boiling_point="Unknown"
+                data-oxidation_state="+3, +4, +5, +6" data-electronegativity="Unknown" data-radius="163"
+                data-group_name="Actinides" data-block="f">102 <br> No</td>
+            <td class="box_class_7" data-name="Lawrencium" data-atomic="103" data-symbol="Lr"
+                data-info="A synthetic element, used in research" data-density="13.5" data-boiling_point="~1627"
+                data-oxidation_state="+3, +4, +5, +6" data-electronegativity="Unknown" data-radius="161"
+                data-group_name="Actinides" data-block="f">103 <br> Lr</td>
+
+
+        </tr>
+    </table>
+
+    <div id="info-box" class="info-box">
+        <p><strong>Density:</strong> <span id="elementdensity"></span></p>
+        <p><strong>Oxidation State:</strong> <span id="elementoxidation_state"></span></p>
+        <p><strong>Boiling Point:</strong> <span id="elementboiling_point"></span></p>
+        <p><strong>Block:</strong> <span id="elementblock"></span></p>
+        <p><strong>Group Name:</strong> <span id="elementgroup_name"></span></p>
+        <p><strong>Radius:</strong> <span id="elementradius"></span></p>
+        <p><strong>Electronegativity:</strong> <span id="elementelectronegativity"></span></p>
+        <p><strong>Name:</strong> <span id="element-name"></span></p>
+        <p><strong>Symbol:</strong> <span id="element-symbol"></span></p>
+        <p><strong>Atomic Number:</strong> <span id="atomic-number"></span></p>
+        <p><strong>Information:</strong> <span id="element-info"></span></p>
+    </div>
+    </div>
+    </div>
+    <script src="Script.js"></script>
+</body>
+
+</html>
